@@ -5,6 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PKC Consultancy – Accounting, Tax & Compliance Experts</title>
   <meta name="description" content="PKC Consultancy offers expert services in Accounting, Income Tax, GST, ROC Compliances, CMA, Graphics Designing, Video Editing, Affidavit & Notary Works."/>
+
+  <!-- ═══════════════════════════════════════════════════
+       GOOGLE MY BUSINESS — SCHEMA.ORG STRUCTURED DATA
+       Tells Google's crawler who PKC Consultancy is so it
+       can populate Google Search, Maps and GMB correctly.
+       ═══════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": "https://www.pkcconsultancy.in/#business",
+    "name": "PKC Consultancy",
+    "alternateName": "PKC Consultancy – Accounting, Tax & Compliance Experts",
+    "description": "PKC Consultancy is a multi-disciplinary professional services firm offering accounting, income tax, GST compliance, ROC filings, CMA reports, graphics designing, video editing, and affidavit & notary services.",
+    "url": "https://www.pkcconsultancy.in/",
+    "logo": "https://www.pkcconsultancy.in/logo.png",
+    "image": "https://www.pkcconsultancy.in/logo.png",
+    "priceRange": "₹₹",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, Bank Transfer, UPI",
+    "telephone": "+91-8770828208",
+    "email": "info@pkcconsultancy.in",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kurud",
+      "addressRegion": "Chhattisgarh",
+      "postalCode": "493663",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "20.7200",
+      "longitude": "81.7500"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:30",
+        "closes": "18:30"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Professional Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Accounting", "description": "Accurate bookkeeping, financial statements, ledger management and monthly/annual accounting." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Income Tax", "description": "ITR filing for individuals, firms and companies, tax planning, TDS compliance, notices handling and refund assistance." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GST Compliance", "description": "GST registration, monthly/quarterly returns filing (GSTR-1, 3B, 9), reconciliations, audit support and advisory." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "ROC Compliances", "description": "Company incorporation, annual filings, MCA compliance, DIR-3 KYC, form filings and secretarial support." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CMA Reports", "description": "Preparation of Credit Monitoring Arrangement reports for bank loans, project finance and working capital assessments." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Graphics Designing", "description": "Brand identity, logos, brochures, social media creatives, banners and professional business stationery design." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video Editing", "description": "Professional video editing for corporate presentations, social media reels, promotional videos and business content." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Affidavit & Notary", "description": "Drafting and notarisation of affidavits, legal declarations, agreements and stamp duty documentation." } }
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/pkcconsultancy",
+      "https://www.linkedin.com/company/pkcconsultancy",
+      "https://www.instagram.com/pkcconsultancy"
+    ],
+    "areaServed": {
+      "@type": "State",
+      "name": "Chhattisgarh",
+      "containedInPlace": { "@type": "Country", "name": "India" }
+    },
+    "knowsAbout": [
+      "Accounting", "Income Tax", "GST Compliance",
+      "ROC Filings", "CMA Reports", "Graphics Designing",
+      "Video Editing", "Affidavit", "Notary", "Tax Advisory"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8770828208",
+      "contactType": "Customer Service",
+      "availableLanguage": ["English", "Hindi"]
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
@@ -387,6 +466,46 @@
     .mobile-menu a:hover { color: var(--gold); }
     .mobile-close { position: absolute; top: 24px; right: 6vw; font-size: 28px; color: var(--white); cursor: pointer; background: none; border: none; }
 
+    /* ── SOCIAL ICONS ── */
+    .footer-social {
+      display: flex; gap: 10px; margin-top: 20px;
+    }
+    .social-icon {
+      width: 38px; height: 38px;
+      border: 1px solid rgba(200,150,62,0.25);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      text-decoration: none;
+      color: rgba(255,255,255,0.45);
+      transition: all 0.22s;
+      flex-shrink: 0;
+    }
+    .social-icon:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(200,150,62,0.08);
+      transform: translateY(-2px);
+    }
+    .social-icon svg { width: 17px; height: 17px; fill: currentColor; }
+
+    /* ── CONTACT SOCIAL ROW ── */
+    .contact-social { margin-top: 32px; }
+    .contact-social h4 {
+      font-size: 13px; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;
+    }
+    .contact-social-icons { display: flex; gap: 12px; }
+    .contact-social-icons .social-icon {
+      border-color: rgba(13,27,42,0.15);
+      color: var(--text-muted);
+      background: var(--cream);
+    }
+    .contact-social-icons .social-icon:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(200,150,62,0.06);
+    }
+
     /* whatsapp float */
     .wa-float {
       position: fixed; bottom: 28px; right: 28px; z-index: 99;
@@ -586,7 +705,7 @@
           <div class="contact-item-icon">📧</div>
           <div>
             <h4>Email</h4>
-            <a href="mailto:contact@pkcconsultancy.in">contact@pkcconsultancy.in</a>
+            <a href="/cdn-cgi/l/email-protection#d1b2bebfa5b0b2a591a1bab2b2bebfa2a4bda5b0bfb2a8ffb8bf"><span class="__cf_email__" data-cfemail="71121e1f0510120531011a12121e1f02041d05101f12085f181f">[email&#160;protected]</span></a>
           </div>
         </div>
         <div class="contact-item">
@@ -601,6 +720,23 @@
           <div>
             <h4>Location</h4>
             <p>Kurud, Chhattisgarh, India</p>
+          </div>
+        </div>
+        <div class="contact-social">
+          <h4>Follow Us</h4>
+          <div class="contact-social-icons">
+            <a href="https://www.facebook.com/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.286h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://wa.me/918770828208" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
           </div>
         </div>
       </div>
@@ -654,7 +790,24 @@
         <span class="logo-text">PKC <span>Consultancy</span></span>
       </a>
       <p>Your trusted partner for accounting, taxation, compliance, creative design, and legal services — all under one roof.</p>
-    </div>
+      <div class="footer-social">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="PKC Consultancy on Facebook">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.286h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="PKC Consultancy on LinkedIn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/pkcconsultancy" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="PKC Consultancy on Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/918770828208" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="PKC Consultancy on WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
     <div class="footer-col">
       <h4>Services</h4>
       <ul>
@@ -677,13 +830,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 PKC Consultancy. All rights reserved. | <a href="https://pkcconsultancy.in">pkcconsultancy.in</a></p>
+    <p>© 2026 PKC Consultancy. All rights reserved. | <a href="https://pkcconsultancy.in">pkcconsultancy.in</a></p>
     <p>Designed with ♥ for PKC Consultancy</p>
   </div>
 </footer>
-
-<!-- WhatsApp Float -->
-<a class="wa-float" href="https://wa.me/91XXXXXXXXXX" target="_blank" title="Chat on WhatsApp">💬</a>
-
-</body>
-</html>
